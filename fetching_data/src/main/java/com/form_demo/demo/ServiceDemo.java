@@ -16,9 +16,9 @@ public class ServiceDemo {
 
 	public List<Map<String,Object>> fetch(int id) {
 		List<Map<String, Object>> list = null, ls = null;
-		String sql = "select * from employee";
+		String sql = "select * from employee where empid=?";
 		try {
-			ls = jt.queryForList(sql);
+			ls = jt.queryForList(sql,id);
 		}
 		catch(Exception e) {
 			System.out.println(e.toString());

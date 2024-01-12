@@ -18,4 +18,4 @@ public class ControllerDemo {
 	public List<Map<String,Object>> fetch(@PathVariable int id) {
 		return ob.fetch(id);
 	}
-}
+} 
